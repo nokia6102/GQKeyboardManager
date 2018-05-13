@@ -69,7 +69,7 @@ static GQKeyboardManager * shareKB = nil;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textEditViewDidEndEditing:) name:UITextFieldTextDidEndEditingNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textEditViewDidBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textEditViewDidEndEditing:) name:UITextViewTextDidEndEditingNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChange:) name:UITextViewTextDidChangeNotification object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChange:) name:UITextViewTextDidChangeNotification object:nil];
 
         _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapRecognized:)];
         _tapGesture.cancelsTouchesInView = NO;
